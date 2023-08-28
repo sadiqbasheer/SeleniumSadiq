@@ -38,6 +38,7 @@ public class CreateLead {
 		driver.findElement(By.id("createLeadForm_departmentName")).sendKeys("HISTORY");
 		driver.findElement(By.name("description")).sendKeys("DESCRIPTION");
 		driver.findElement(By.name("primaryEmail")).sendKeys("sadiqbasheer@gmail.com");
+		//driver.findElement(By.xpath("//input[contains(text(),'id=\"createLeadForm_primaryEmail\"']"));
 		
 		// web element state
 		WebElement stateDD = driver.findElement(By.id("createLeadForm_generalStateProvinceGeoId"));
