@@ -3,6 +3,7 @@ package homework;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
@@ -35,7 +36,8 @@ public class LaunchAbhiBus {
 		//driver.findElement(By.xpath("//span[@id='ticketfare']")).getText();
 		System.out.println(driver.findElement(By.xpath("//span[@id='ticketfare']")).getText());
 		
-		//driver.findElement(By.xpath("//select[@id='boardingpoint_id']"));
+		 WebElement element = driver.findElement(By.xpath("//select[@id='boardingpoint_id']"));
+		
 		Select sec = new Select(driver.findElement(By.xpath("//select[@id='boardingpoint_id']")));
 		sec.selectByIndex(2);
 		driver.findElement(By.xpath("//select[@id='droppingpoint_id']"));
