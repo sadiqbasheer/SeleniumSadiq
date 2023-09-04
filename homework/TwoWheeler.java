@@ -9,6 +9,11 @@ public class TwoWheeler {
 	String bikeName = "Yamaha";
 	double runningKM = 10000d;
 	
+	public void displayTwoWheeler() {
+		// TODO Auto-generated method stub
+			System.out.println("am in twowheeler");
+	}
+	
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
